@@ -1,0 +1,26 @@
+LRU cache
+
+--------------------------------------------------
+
+Design a notification service.
+
+While solving the problem, for idempotency handling, I have used even-driven architecture.
+The solution that I gave is publishing the messages in Kafka, and processing the messages through Flink. So that unique message gets processed exactly once, with respect to the idempotent id.
+
+Interviewer's (Staff Software Engineer) comments
+
+There is no way to handle idempotency using even driven architecture.
+He was expecting solution with Redis. (Synchronous write-through caching)
+I did some research, my solution is working and much-more scalable in case of burst traffic and bust notification.
+
+--------------------------------------------------
+
+Machine Coding Round / Specialization round
+JS task runner implementation with dependencies. Solution related to graph traversal and knowledge about JS setTimeouts / Promises
+
+--------------------------------------------------
+
+a. You're the owner of an apartment which has 2 lifts. Tenants have been complaining about the inefficiency of lifts and how they have to wait so long for the lift. How will you go about this situation.
+
+--------------------------------------------------
+

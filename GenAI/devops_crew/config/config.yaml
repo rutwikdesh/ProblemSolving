@@ -1,0 +1,42 @@
+# Configuration for DevOps Log Analysis Crew
+
+# LLM Configuration
+llm:
+  model: "gpt-4"
+  temperature: 0.1
+  max_tokens: 2000
+
+# Agent Configuration
+agents:
+  log_analyzer:
+    role: "Senior DevOps Log Analyst"
+    max_iter: 3
+    max_execution_time: 300
+    
+  solution_finder:
+    role: "DevOps Solutions Architect"
+    max_iter: 3
+    max_execution_time: 300
+    
+  recommendation:
+    role: "Senior DevOps Lead"
+    max_iter: 2
+    max_execution_time: 300
+
+# Task Configuration
+tasks:
+  analysis:
+    expected_output_format: "markdown"
+    
+  solution_finding:
+    expected_output_format: "markdown"
+    
+  recommendation:
+    expected_output_format: "markdown"
+
+# Output Configuration
+output:
+  directory: "logs"
+  format: "markdown"
+  timestamp_format: "%Y%m%d_%H%M%S"
+
