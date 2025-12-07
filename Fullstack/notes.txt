@@ -24,3 +24,12 @@ a. You're the owner of an apartment which has 2 lifts. Tenants have been complai
 
 --------------------------------------------------
 
+Question: Given a log file with rider information (name, city_visited, timestamp), make unique triplets of cities visited by the order of the timestamp and return the number of riders for each triplet that have visted those cities in the exact same order.
+
+Follow-up:
+a. if the information is too large for it to be stored in memory.
+b. if you want to solve this faster.
+
+--------------------------------------------------
+
+
