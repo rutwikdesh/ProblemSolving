@@ -1,3 +1,5 @@
+// ? Quick Sort Algorithm
+
 function partition(arr, low, high) {
   let pivot = arr[low];
   let i = low;

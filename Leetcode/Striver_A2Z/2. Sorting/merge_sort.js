@@ -1,3 +1,5 @@
+// ? Merge Sort Algorithm
+
 function merge(arr, low, mid, high) {
   let temp = [];
   let left = low;

@@ -18,6 +18,7 @@ function maxEvents(events) {
   const minheap = new MinPriorityQueue();
 
   while (pos < n || !minheap.isEmpty()) {
+    // Skip to min time of curr interval to start with
     if (minheap.isEmpty()) {
       time = Math.max(time, events[pos][0]);
     }
