@@ -1,22 +1,20 @@
 // Build Trie (use this in almost all problems)
 
 
-const buildTrie = (words) => {
-  const root = {};
-
-  for (const word of words) {
-    let node = root;
-
-    for (const ch of word) {
-      if (!node[ch]) node[ch] = {};
+const createTrie = function (words) {
+  let trie = {};
+  for (let word of words) {
+    let node = trie;
+    for (let ch of word) {
+      if (!node[ch]) {
+        node[ch] = {}
+      }
       node = node[ch];
     }
-
-    node.word = word; // ⭐ mark end (better than isEnd)
+    node.word = word;
   }
-
-  return root;
-};
+  return trie;
+}
 
 
 // Example Obj:
